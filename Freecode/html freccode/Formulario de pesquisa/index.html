@@ -1,0 +1,75 @@
+<!DOCTYPEhtml>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de Pesquisa
+ </title>
+ <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <h1 id="title">Formulario de pesquisa<p id="description">
+     Esse é um formulario para saber qual seu sabor preferido de salgados de festas
+   </p></h1>
+  
+   <form id="survey-form">
+    <section>
+     <label id="name-label">
+       <input id="name" type="text" placeholder="Digite seu nome aqui"  required>Digite seu nome</input></label>
+  
+      <label id="email-label" > <input id="email"  type="email" placeholder="Digite seu email aqui"  required >Digite seu email</input></label>
+
+     <label  id="number-label">  
+       <input id="number" type="number" min="10" max="12"  placeholder="Digite seu numero com ddd aqui"  required >Digite seu telefone</input>
+       </label>
+       </section>
+
+<section>
+     <label for="dropdown"></label>
+     <select id="dropdown">
+         <option value="">(Escolha seu salgado preferido)</option>
+            <option value="1">Coxinha</option>
+            <option value="2">Risoles de presunto e queijo</option>
+            <option value="3">Kibe</option>
+            <option value="4">Croquete de carne</option>
+       <select/>
+      
+       <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Qual outro sabor vc sugeriria?"></textarea>
+       
+       <fieldset>
+       <legend>Prefere assado ou frito:</legend>
+        <label >
+          <input type="radio" name="assado-frito"  value="Assado"  checked /> Assado
+          </label>
+        <label >
+          <input  type="radio" name="assado-frito" value="Frito"  /> Frito
+          </label>
+          </fieldset>
+          <filedset>
+         <legend>Prefere entrega ou retirar:</legend>
+        <label >
+          <input type="checkbox" name="entrega-retirada" value="retirada" checked /> Entrega
+          </label>
+        <label >
+          <input  type="checkbox" name="entrega-retirar" value="retirar" /> Retirar</label>
+          </fieldset>
+          <fieldset>
+        <legend>devemos adcionar opções vegana:</legend>
+       
+        <label>
+          <input type="checkbox" name=  "Sim" value="  Sim">
+          Sim
+        </label>
+       
+        <label>
+          <input type="checkbox" name=" Não" value=" Não">
+        Não
+        </label>
+      </fieldset>
+      <button id="submit" type="submit">Enviar</button>
+      </section>
+      
+       
+   </form>
+
+ </body>
+ 
